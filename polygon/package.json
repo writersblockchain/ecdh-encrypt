@@ -9,7 +9,6 @@
     "hardhat": "^2.14.1"
   },
   "dependencies": {
-    "@axelar-network/axelar-gmp-sdk-solidity": "^3.3.0",
     "@cosmjs/encoding": "^0.27.1",
     "@cosmjs/math": "0.27.1",
     "@noble/hashes": "1.0.0",

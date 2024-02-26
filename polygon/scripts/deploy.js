@@ -1,16 +1,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  let PrivateVotingFactory = await hre.ethers.getContractFactory(
-    "PrivateVoting"
-  );
-  let privatevoting = await PrivateVotingFactory.deploy();
+  let EncryptFactory = await hre.ethers.getContractFactory("Encrypt");
+  let encrypt = await EncryptFactory.deploy();
 
-  console.log("PrivateVoting deployed to: ", privatevoting.address);
+  console.log("Encrypt deployed to: ", encrypt.address);
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;

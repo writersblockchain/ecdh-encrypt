@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/sean_conrad/Documents/developer/secret/examples/evm-confidential-voting/polygon/contracts/PrivateVoting.sol": {
-      "lastModificationDate": 1705429679280,
-      "contentHash": "94a13359e6d1d1622d0b142f33f09e27",
-      "sourceName": "contracts/PrivateVoting.sol",
+    "/Users/sean_conrad/Desktop/ecdh-encrypt/polygon/contracts/Encrypt.sol": {
+      "lastModificationDate": 1708904487796,
+      "contentHash": "db335f2707bf2e08054c6fe8cea20566",
+      "sourceName": "contracts/Encrypt.sol",
       "solcConfig": {
         "version": "0.8.9",
         "settings": {
@@ -30,10 +30,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.9"
+        "^0.8.0"
       ],
       "artifacts": [
-        "PrivateVoting"
+        "Encrypt"
       ]
     }
   }

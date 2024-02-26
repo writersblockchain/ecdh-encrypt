@@ -58,15 +58,13 @@ let instantiate_contract = async () => {
       code_id: codeId,
       sender: wallet.address,
       code_hash: contractCodeHash,
-      init_msg: { count: 0 },
+      init_msg: {},
       label: "ENCRYPT " + Math.ceil(Math.random() * 10000),
     },
     {
       gasLimit: 400_000,
     }
   );
-
-  // console.log(tx);
 
   //Find the contract_address in the logs
   const contractAddress = tx.arrayLog.find(
