@@ -20,7 +20,7 @@ let other_public_key = process.env.ECC_PUBLIC_KEY.split(",").map((num) =>
 );
 
 const data =
-  "0xe5370f62cb62d66e1b35c6f24031d1a12ec10142d97c2f51a6a66a37a0e3e21955cef8382534818f72f2ce9237b1bc359c5e67bfd1de956acc0f0d0801f06d5a8c0e84b9a1231988c163aa92ba85f656e87ec4";
+  "0x04a5e7631dac1665acab943cc2f8f32cbabfdd2158d34ea23f3d3227aab3bc89a8d31c";
 
 function hexToArray(hexString) {
   // Check if the string starts with '0x' and remove it
@@ -42,7 +42,11 @@ let get_decrypted_query = async () => {
     contract_address: contractAddress,
     query: {
       decrypt_query: {
-        public_key: other_public_key,
+        public_key: [
+          3, 118, 120, 142, 29, 35, 3, 21, 172, 209, 97, 236, 216, 110, 118, 24,
+          11, 161, 53, 45, 56, 193, 141, 235, 56, 13, 177, 99, 213, 172, 58, 4,
+          124,
+        ],
         encrypted_message: to_decrypt,
       },
     },

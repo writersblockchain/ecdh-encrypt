@@ -7,7 +7,7 @@ const encryptAddress = process.env.CONTRACT_ADDRESS; // Replace with your deploy
 
 async function store_encrypt() {
   let msg = {
-    to_encrypt: "this is a secret message",
+    message: "this is a secret message",
     salt: Math.random(),
   };
 
